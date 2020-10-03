@@ -19,6 +19,7 @@ a {
 body {
     font: 400 22px 'Poppins', sans-serif;
     color: #444;
+    line-height: 1.6;
 }
 
 .container {
@@ -127,6 +128,11 @@ header .container {
     align-items: center;
     text-align: center;
     color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/hero.jpg);
+    
 }
 
 .hero__title {
@@ -174,4 +180,12 @@ header .container {
 .btn--transparent:focus,
 .btn--transparent:active {
     color:#444;
+}
+
+.text-purple {
+    color: #e71cb4;
+}
+
+.text-lg {
+    font-size: 32px;
 }
