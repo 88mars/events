@@ -22,6 +22,11 @@ body {
     line-height: 1.6;
 }
 
+@media screen and (max-width: 768px) {
+    body {
+      font-size: 16px;  
+    }
+}
 .container {
     max-width: 1170px;
     padding: 0 15px;
@@ -29,7 +34,7 @@ body {
 }
 
 .container--sm {
-    min-width: 750px;
+    max-width: 750px;
 }
 
 .box {
@@ -68,6 +73,25 @@ h4 {
 
 h5 {
     font-size: 24px;
+}
+
+@media screen and (max-width: 768px) {
+    h1, h2 {
+        font-size: 42px;
+    }
+    
+    
+    h3 {
+        font-size: 28px ;
+    }
+    
+    h4 {
+        font-size: 24px;
+    }
+    
+    h5 {
+        font-size: 18px;
+    }
 }
 
 header {
@@ -167,6 +191,13 @@ header .container {
     padding: 25px 80px;
 }
 
+@media screen and (max-width: 576px) {
+    .btn--lg{
+        font-size: 16px;
+        padding: 15px 45px;
+    }
+}
+
 .btn:hover,
 .btn:focus,
 .btn:active {
@@ -194,6 +225,14 @@ header .container {
     font-size: 32px;
     margin: 90px 0;
 }
+
+@media screen and (max-width: 768px) {
+    .text-lg{
+        font-size: 24px;
+        margin: 50px 0;
+    }
+}
+
 .text-sm {
     font-size: 14px;
     margin: 45px 0;
@@ -207,9 +246,22 @@ header .container {
     column-count: 2;
     column-gap: 30px;
 }
+
+@media screen and (max-width: 960px) {
+    .course {
+        column-count: 1;
+    }
+}
 .course li {
     display: flex;
    padding: 25px 0;
+}
+
+@media screen and (max-width: 576px) {
+    .course li {
+        flex-direction: column;
+    }
+    
 }
 .course__index {
     font-size: 44px;
@@ -219,6 +271,14 @@ header .container {
     line-height: 1.2;
     flex: 0 0 auto;
 }
+
+@media screen and (max-width: 576px) {
+    .course__index {
+        font-size: 32px;
+        padding: 0;
+    }
+}
+
 .course__index > i {
     margin-right:25px;
 }
@@ -243,21 +303,36 @@ header .container {
     margin: 40px 0;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 .person {
     padding: 20px 60px;
     text-align: center;
-    max-width: 33%;
+    width: 33%;
 
 
 }
+
+@media screen and (max-width: 960px) {
+    .person {
+        width:50%;
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .person {
+        width: 80%;
+        
+    }
+}
+
 .person--pading-sm {
     padding: 20px;
 }
 .person__img {
     margin: 20px auto;
-     width: 270px;
+     width: 100%;
      padding-top: 100%;
      position: relative;
      overflow: hidden;
@@ -303,6 +378,37 @@ header .container {
     text-align: center;
     transition: all .3s ease-in;
 }
+
+@media screen and (max-width: 960px) {
+    .countdown__item {
+        min-width: 120px;
+        min-height: 120px;
+        padding: 10px 20px;
+        margin: 15px 20px;
+    }
+    .countdown__num {
+        font-size: 50px;
+    }
+    .countdown__text {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .countdown__item {
+        min-width: 160px;
+        min-height: 160px;
+        padding: 15px 30px 20px;
+        margin: 15 35px;
+    }
+    .countdown__num {
+        font-size: 70px;
+    }
+    .countdown__text {
+        font-size: 18px;
+    }
+}
+
 .countdown__item:hover,
 .countdown__item:focus {
     background-color: transparent;
